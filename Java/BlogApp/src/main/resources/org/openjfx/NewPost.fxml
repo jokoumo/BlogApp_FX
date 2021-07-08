@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="640.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.C_NewPost">
+   <children>
+      <Button fx:id="buttonAddPost" layoutX="13.0" layoutY="383.0" mnemonicParsing="false" onAction="#addPost" text="Beitrag hinzufügen" />
+      <TextField fx:id="textFieldTitle" layoutX="13.0" layoutY="14.0" prefHeight="25.0" prefWidth="574.0" promptText="Titel" />
+      <TextArea fx:id="textAreaText" layoutX="13.0" layoutY="46.0" prefHeight="200.0" prefWidth="574.0" promptText="Beispieltext" wrapText="true" />
+      <TextField fx:id="textFieldAddCategory" layoutX="437.0" layoutY="493.0" promptText="Neue Kategorie" />
+      <Button fx:id="buttonAddCategory" layoutX="437.0" layoutY="527.0" mnemonicParsing="false" onAction="#addCategory" text="Kategorie hinzufügen" />
+      <Button fx:id="buttonBack" layoutX="13.0" layoutY="600.0" mnemonicParsing="false" onAction="#switchToEditBlog" text="Zurück" />
+      <TextField fx:id="textFieldImageUrl" editable="false" layoutX="13.0" layoutY="253.0" prefHeight="25.0" prefWidth="574.0" promptText="Dateipfad" />
+      <Button fx:id="buttonLoadImage" layoutX="13.0" layoutY="278.0" mnemonicParsing="false" onAction="#loadImage" text="Bild laden" />
+      <ComboBox fx:id="comboBoxCategory" layoutX="13.0" layoutY="314.0" prefHeight="25.0" prefWidth="256.0" />
+      <RadioButton fx:id="radioButtonPublished" layoutX="13.0" layoutY="354.0" mnemonicParsing="false" selected="true" text="Veröffentlichen">
+         <toggleGroup>
+            <ToggleGroup fx:id="publish" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioButtonDraft" layoutX="126.0" layoutY="354.0" mnemonicParsing="false" text="Entwurf" toggleGroup="$publish" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.C_UserProfile">
+   <children>
+      <Button fx:id="buttonBack" layoutX="14.0" layoutY="418.0" mnemonicParsing="false" onAction="#switchToReader" text="Zurück" />
+      <TextField fx:id="textFieldFirstName" editable="false" layoutX="183.0" layoutY="66.0" prefHeight="25.0" prefWidth="234.0" promptText="Vorname" />
+      <TextField fx:id="textFieldLastName" editable="false" layoutX="183.0" layoutY="96.0" prefHeight="25.0" prefWidth="234.0" promptText="Nachname" />
+      <TextField fx:id="textFieldEmail" editable="false" layoutX="183.0" layoutY="126.0" prefHeight="25.0" prefWidth="234.0" promptText="Email Adresse" />
+      <TextField fx:id="textFieldBirthDate" editable="false" layoutX="183.0" layoutY="156.0" prefHeight="25.0" prefWidth="234.0" promptText="Geboren am" />
+      <TextField fx:id="textFieldCountry" editable="false" layoutX="183.0" layoutY="186.0" prefHeight="25.0" prefWidth="234.0" promptText="Land" />
+      <PasswordField fx:id="pwFieldOld" layoutX="183.0" layoutY="300.0" prefHeight="25.0" prefWidth="234.0" promptText="Altes Passwort" />
+      <PasswordField fx:id="pwFieldNew_1" layoutX="183.0" layoutY="330.0" prefHeight="25.0" prefWidth="234.0" promptText="Neues Passwort" />
+      <PasswordField fx:id="pwFieldNew_2" layoutX="183.0" layoutY="360.0" prefHeight="25.0" prefWidth="234.0" promptText="Neues Passwort" />
+      <Button fx:id="buttonChangePw" layoutX="313.0" layoutY="252.0" mnemonicParsing="false" onAction="#changePassword" text="Passwort ändern" />
+      <Button fx:id="buttonSavePw" layoutX="348.0" layoutY="390.0" mnemonicParsing="false" onAction="#savePassword" text="Speichern" />
+      <Button fx:id="buttonDiscardPw" layoutX="183.0" layoutY="390.0" mnemonicParsing="false" onAction="#discardPassword" text="Abbrechen" />
+      <Label fx:id="labelInfoPw" layoutX="183.0" layoutY="280.0" prefHeight="17.0" prefWidth="234.0" text="Label" textFill="#b21a1a">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldJoiningDate" editable="false" layoutX="183.0" layoutY="216.0" prefHeight="25.0" prefWidth="234.0" promptText="Mitglied seit" />
+      <Label alignment="CENTER_RIGHT" layoutX="124.0" layoutY="69.0" text="Vorname: ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="114.0" layoutY="99.0" text="Nachname: ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="97.0" layoutY="129.0" text="Email Adresse: ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="105.0" layoutY="159.0" text="Geboren am: ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="149.0" layoutY="189.0" text="Land: ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="105.0" layoutY="219.0" text="Mitglied seit: ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
